@@ -1,0 +1,31 @@
+{
+  "name": "brownbag-cli",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "description": "Command line interface for the brownbag meeting.",
+  "authors": [
+    "Alan Souza"
+  ],
+  "homepage": "http://grommet.io",
+  "bugs": "https://github.com/alansouzati/brownbag-cli/issues",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alansouzati/brownbag-cli.git"
+  },
+  "bin": {
+    "brownbag": "./bin/index.js"
+  },
+  "preferGlobal": true,
+  "dependencies": {
+    "vorpal": "https://github.com/alansouzati/vorpal/tarball/EXIT_ON_PARSE"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-eslint": "^6.1.2",
+    "babel-preset-es2015": "^6.9.0"
+  },
+  "scripts": {
+    "build": "node_modules/.bin/babel src --out-dir bin --copy-files --loose-mode"
+  }
+}
